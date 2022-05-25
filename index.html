@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutenova - Block Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="display-5 text-center">Block Generator</h1>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input id="block-name" type="text" class="form-control" placeholder="Block Name">
+                        </div>
+                        <div class="col">
+                            <input id="block-label" type="text" class="form-control" placeholder="Block Label">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group my-3">
+                                <select id="block-field" class="form-control" id="inputGroupSelect02">
+                                    <option selected>Choose Field...</option>
+                                    <option value="TextControl">TextControl</option>
+                                    <option value="__experimentalNumberControl">NumberControl</option>
+                                    <option value="PanelBody">PanelBody</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" aria-describedby="optionlabelhelp" placeholder="Option Label">
+                            <small id="optionlabelhelp" class="form-text text-muted">For multiple options separated by commas</small>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" aria-describedby="optionvaluehelp" placeholder="Option Value">
+                            <small id="optionvaluehelp" class="form-text text-muted">For multiple options separated by commas</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mt-3">
+                            <input class="form-control" id="default-value" placeholder="Default Value">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mt-3">
+                            <input type="submit" id="generate" class="btn btn-primary btn-lg btn-block" value="Add">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-6 mt-5 pt-3">
+                <textarea id="generate-code" row="10" cols="20" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

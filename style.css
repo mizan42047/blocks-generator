@@ -1,0 +1,14 @@
+.btn-block{
+    width: 100%;
+    display: block;
+}
+
+#generate-code{
+    min-height: 500px;
+    height: 100%;
+}
+
+#default-value{
+    min-height: 50px;
+    height: 100%;
+}
