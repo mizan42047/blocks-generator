@@ -12,3 +12,6 @@
     min-height: 50px;
     height: 100%;
 }
+#optionLabel,#optionValue{
+    display: none;
+}

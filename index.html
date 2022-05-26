@@ -12,7 +12,7 @@
 
 <body>
 
-    <div class="container">
+    <div class="container gutenova">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h1 class="display-5 text-center">Block Generator</h1>
@@ -30,21 +30,27 @@
                             <div class="input-group my-3">
                                 <select id="block-field" class="form-control" id="inputGroupSelect02">
                                     <option selected>Choose Field...</option>
-                                    <option value="TextControl">TextControl</option>
-                                    <option value="__experimentalNumberControl">NumberControl</option>
-                                    <option value="PanelBody">PanelBody</option>
+                                    <option value="PanelBody">Panel Body</option>
+                                    <option value="PopoverControl">Popover Control</option>
+                                    <option value="TextControl">Text Control</option>
+                                    <option value="TextareaControl">Textarea Control</option>
+                                    <option value="SelectControl">Select Control</option>
+                                    <option value="ToggleControl">Toggle Control</option>
+                                    <option value="__experimentalNumberControl">Number Control</option>
+                                    <option value="__experimentalUnitControl">unit Control</option>
+                                    <option value="__experimentalBoxControl">Box Control</option>
+                                    <option value="ColorPalette">Color Palette</option>
+                                    <option value="FontfamilyControl">Font amily</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <input type="text" class="form-control" aria-describedby="optionlabelhelp" placeholder="Option Label">
-                            <small id="optionlabelhelp" class="form-text text-muted">For multiple options separated by commas</small>
+                            <input type="text" class="form-control" id="optionLabel" aria-describedby="optionlabelhelp" placeholder="Option Label">
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" aria-describedby="optionvaluehelp" placeholder="Option Value">
-                            <small id="optionvaluehelp" class="form-text text-muted">For multiple options separated by commas</small>
+                            <input type="text" id="optionValue" class="form-control" aria-describedby="optionvaluehelp" placeholder="Option Value">
                         </div>
                     </div>
                     <div class="row">
@@ -60,7 +66,8 @@
 
                 </form>
             </div>
-            <div class="col-md-6 mt-5 pt-3">
+            <div class="col-md-6 mt-5 pt-3 text-center">
+                <button id="copy-code" class="btn btn-success btn-block">Copy</button>
                 <textarea id="generate-code" row="10" cols="20" class="form-control"></textarea>
             </div>
         </div>
